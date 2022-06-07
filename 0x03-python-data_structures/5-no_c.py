@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    new_string = ""
-    for j in my_string:
-        if i is not 'c' and i is not 'C':
-            new_string += j
-    return (new_string)
+    x = list(my_string)
+    l = []
+
+    for i in x:
+        if i.casefold() != 'C'.casefold():
+            l.append(i)
+    return ("".join(l))

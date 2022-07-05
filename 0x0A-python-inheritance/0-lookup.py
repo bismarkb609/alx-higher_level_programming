@@ -2,7 +2,7 @@
 """ Lookup Module """
 
 
-def lookup(obj):
+def lookup(self, obj):
     """
         Function returns all attributes and methods of an
         object.

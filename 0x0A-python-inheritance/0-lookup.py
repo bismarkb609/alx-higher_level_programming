@@ -8,4 +8,4 @@ def lookup(obj):
         object.
     """
 
-    return vars(obj):
+    return dir(obj):

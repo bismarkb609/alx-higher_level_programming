@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-""" Module : 2-append_write """
+"""2-append_write.py
+Defines a file-appending function.
+"""
 
 
 def append_write(filename="", text=""):
-    """ Append a string to a text file"""
-    with open(filename, mode="a+", encoding="utf-8") as myFile:
-        myFile.write("This School is so cool!\n")
-
-    return len(text)
+    """Appends a string to the end of a UTF8 text file.
+    Args:
+        filename (str): The name of the file to append to.
+        text (str): The string to append to the file.
+    Returns:
+        The number of characters appended.
+    """
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)

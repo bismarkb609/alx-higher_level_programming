@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Takes in a url and email, send a post request to the email """
-
 if __name__ == "__main__":
     import urllib.request
     import urllib.parse

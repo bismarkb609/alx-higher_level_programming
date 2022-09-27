@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Fetches https://intranet.hbtn.io/statu
+""" Fetches https://intranet.hbtn.io/status """
 
 if __name__ == "__main__":
     import urllib.request 
@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("Body response:$")
         print(f"\t- type: {type(html)}$")
         print(f"\t- content: {format(html)}$")
-        print(f"\t- utf8 content: {format(html.decode('utf-8', 'replace'))}$")
+        print(f"\t- utf8 content: {format(html.decode('utf-8', 'replace'))}i$")
 
 
 
